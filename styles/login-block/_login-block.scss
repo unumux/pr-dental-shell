@@ -1,0 +1,12 @@
+.login-block {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: $space-stack-xl;
+    padding: $space-inset-squish-xl;
+
+    @import 'actions';
+    @import 'action';
+    @import 'content';
+    @import 'heading';
+    @import 'login';
+}

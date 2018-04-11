@@ -1,0 +1,14 @@
+&__actions {
+    list-style: none;
+    margin: $space-stack;
+    text-align: center;
+    padding-left: 0;
+
+    @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+    }
+        
+}

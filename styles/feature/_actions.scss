@@ -1,0 +1,20 @@
+&__actions {
+    list-style: none;
+    margin: $space-stack;
+    text-align: center;
+    padding-left: 0;
+
+    @media screen and (min-width: breakpoint(sm, $grid-breakpoints)) {
+        display: flex;
+        align-items: center;
+        // justify-content: flex-end;
+    }
+
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        display: block;
+        list-style: none;
+        margin: $space-stack;
+        text-align: center;
+        padding-left: 0;
+    }
+}

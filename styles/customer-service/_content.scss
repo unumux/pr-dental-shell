@@ -1,0 +1,5 @@
+&__content {
+    @include set-text-style($text-style-content-2);
+    margin: $space-stack;
+    
+}

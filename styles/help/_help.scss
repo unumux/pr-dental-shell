@@ -1,0 +1,11 @@
+$component-help-background-color: #fff;
+
+.dental-help {
+    
+        background-color: $component-help-background-color;
+        border-radius: 8px;
+        padding: $space-inset-xl;
+        
+        @import 'heading';
+        @import 'list';
+    }

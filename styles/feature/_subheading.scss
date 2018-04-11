@@ -1,0 +1,6 @@
+﻿&__subheading {
+    @include set-text-style($text-style-heading-4);
+
+    color: $component-feature-heading-color;
+    // margin: 0 0 space(3);
+}

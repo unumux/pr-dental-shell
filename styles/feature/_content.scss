@@ -1,0 +1,45 @@
+&__content {
+    background-color: $component-feature-content-background-color;
+    display: block;
+    padding: $space-inset-squish-xl;
+    width: 100%;
+
+    @media screen and (min-width: breakpoint(md, $grid-breakpoints)) {
+        border-radius: $component-border-radius;
+        box-shadow: 5px 8px 12px 0 $component-feature-box-shadow-color;
+        margin-top: -$space-xxl;
+    }
+
+    @media screen and (min-width: breakpoint(lg, $grid-breakpoints)) {
+        align-self: center;
+        margin-left: -$space-xl;
+        margin-top: inherit;
+        max-width: $component-feature-content-max-width;
+        min-height: $component-feature-content-min-height;
+        position: relative;
+
+        &::after {
+            background: $component-feature-shadow-background-color;
+            border: 4px solid $component-feature-shadow-border-color;
+            bottom: -$space-l;
+            content: "";
+            position: absolute;
+            right: -$space;
+            top: -$space-l;
+            width: $component-feature-content-after-width-percent;
+            z-index: -1;
+        }
+
+    }
+
+    .willow-styling-context {
+        a {
+            color: #333;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
