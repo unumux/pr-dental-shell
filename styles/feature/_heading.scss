@@ -1,0 +1,8 @@
+&__heading {
+    @include set-text-style($text-style-heading-1);
+    
+    // line-height: 1.1 !important; //overriding the set height mixin/thing from willow
+    // margin: 0 0 space(3);
+    color: $component-feature-heading-color;
+    margin: $space-stack-xxs;
+}

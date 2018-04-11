@@ -1,0 +1,26 @@
+$component-feature-border-color: $theme-primary;
+
+.feature {
+    @include set-text-style($text-style-content-1);
+
+    background-color: $component-feature-background-color;
+    border-bottom: $space solid $component-feature-border-color;
+    margin-bottom: $space-xl;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+        display: flex;
+        height: 600px;
+    }
+
+    @import "content";
+    @import "description";
+    @import "image";
+    @import "content-section";
+    @import "heading";
+    @import "subheading";
+    @import "actions";
+    @import "action";
+}
+

@@ -1,0 +1,136 @@
+@import "node_modules/@unumux/theme-coloniallife-default/styles";
+@import "node_modules/@unumux/willow/styles";
+@import "overrides/willow";
+@import 'feature/feature';
+@import 'help/help';
+@import 'provider/provider';
+@import 'login-block/login-block';
+@import 'sidebar-content/sidebar-content';
+@import 'customer-service/customer-service';
+@import 'forms/forms';
+$component-icon-bg-background-color: $theme-accent;
+$component-border-color: $theme-base-3;
+$component-logo-border-color: $theme-base-3;
+$component-logo-text-color: $theme-text-inverse;
+.logo-text {
+    border-left: 2px solid #19557f;
+    color: #19557f;
+    margin-left: space(1);
+    padding-left: space(1);
+    vertical-align: text-bottom;
+}
+
+.homepage-feature {
+    background-image: url('https://unumux.github.io/coloniallife-dental-shell/images/hero-image@2x.jpg');
+    background-position: 50%;
+}
+
+.icon-bg {
+    background-color: $component-icon-bg-background-color;
+    border-radius: 50%;
+    height: $space-xxl;
+    margin-bottom: $space;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $space-inset;
+    width: $space-xxl;
+}
+
+.icon-pin,
+.icon-dental,
+.icon-gear {
+    height: 100%;
+    width: 100%;
+}
+
+.icon-pin {
+    background-image: url('https://unumux.github.io/coloniallife-dental-shell/images/icon-pin.svg');
+}
+
+.icon-dental {
+    background-image: url('https://unumux.github.io/coloniallife-dental-shell/images/icon-dental.svg');
+}
+
+.icon-gear {
+    background-image: url('https://unumux.github.io/coloniallife-dental-shell/images/icon-gear.png');
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1900px;
+    min-height: 100vh;
+    @media screen and (min-width: 1900px) {
+        overflow-x: hidden;
+    }
+}
+
+.container {
+    display: block;
+    flex-direction: initial;
+    max-width: none;
+    /* Will this break things? */
+    min-height: auto;
+    @media (min-width: 1200px) {
+        max-width: 1220px;
+    }
+}
+
+.up {
+    margin-top: -$space-l;
+}
+
+.cl-dental-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dropdown-nav {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    position: absolute;
+    top: 4.5rem;
+    right: 0rem;
+    z-index: 999;
+    [data-expanded="false"] & {
+        display: none;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        display: inline-block;
+        margin-bottom: 1rem;
+        width: 20rem;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        border: 3px solid #19557f;
+        border-radius: 5px;
+        color: #19557f !important;
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            background-color: #19557f;
+            color: white !important;
+        }
+    }
+}
+
+.login-button {
+    display: block;
+    margin: 2rem auto;
+    max-width: 275px;
+    width: auto;
+}
+
+p {
+    font-size: inherit;
+}

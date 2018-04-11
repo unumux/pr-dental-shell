@@ -1,0 +1,9 @@
+&__link {
+    
+        &--active {
+            display: block;
+            font-weight: 600;
+            padding: $space-inset-squish-l;
+            text-decoration: none;
+        }
+    }

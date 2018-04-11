@@ -1,0 +1,20 @@
+&__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 250px;
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+        height: 425px;
+    }
+
+    @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+        flex-basis: 50%;
+        height: 100%;
+
+        .feature--flip & {
+            order: 1;
+        }
+    }
+}

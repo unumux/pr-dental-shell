@@ -1,0 +1,7 @@
+.sidebar-content {
+    margin: $space-stack-xl;
+    @import 'action';
+    @import 'actions';
+    @import 'content';
+    @import 'heading';
+}
