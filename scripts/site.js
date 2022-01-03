@@ -13,14 +13,17 @@
 
 let controller = document.querySelector("[data-expanded]");
 let control = document.querySelector("[data-expanded] .dropdown-navControl");
+let date = document.querySelector(".willow-page-footer__copyright-year");
 
-document.addEventListener("click", e => {
-  let status = controller.getAttribute("data-expanded");
+date.innerText = new Date().getFullYear();
 
-  if (status === "true") {
-    controller.setAttribute("data-expanded", "false");
-  } else if (e.target === control) {
-    e.preventDefault();
-    controller.setAttribute("data-expanded", "true");
-  }
+document.addEventListener("click", (e) => {
+    let status = controller.getAttribute("data-expanded");
+
+    if (status === "true") {
+        controller.setAttribute("data-expanded", "false");
+    } else if (e.target === control) {
+        e.preventDefault();
+        controller.setAttribute("data-expanded", "true");
+    }
 });
